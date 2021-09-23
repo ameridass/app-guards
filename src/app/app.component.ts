@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'app-guardians';
-  constructor(private router: Router){
+  constructor(){
 
   }
 

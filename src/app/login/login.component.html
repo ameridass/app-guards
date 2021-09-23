@@ -3,25 +3,25 @@
         <div class="col-md-4 offset-md-4">
             <div class="login-form bg-light mt-4 p-4">
                 <form action="" method="" class="row g-3">
-                    <h4>Bienvenido</h4>
+                    <h4>{{titulo}}</h4>
                     <hr class="mt-4">
                     <div class="col-12">
                         <label>Usuario</label>
-                        <input type="text" name="username" class="form-control" placeholder="Nombre de usuario">
+                        <input type="text" name="username" [(ngModel)]="userName" class="form-control" placeholder="Nombre de usuario">
                     </div>
                     <div class="col-12">
                         <label>Contraseña</label>
-                        <input type="password" name="password" class="form-control" placeholder="Contraseña">
+                        <input type="password" name="password" [(ngModel)]="userPassword" class="form-control" placeholder="Contraseña">
                     </div>
                     <div class="col-12">
-                       
+
                     </div>
                     <div class="col-12">
-                        
-                        <button type="button" class="btn btn-dark float-end" (click)="getLogin();">Ingresar</button>
+
+                        <button type="button" class="btn btn-dark float-end" (click)="getHome();">Ingresar</button>
                     </div>
                 </form>
-               
+
             </div>
         </div>
     </div>
